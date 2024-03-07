@@ -1,0 +1,51 @@
+﻿
+-------------------**************************************-----------------------
+Instrucciones para la construcción de la API web De la aplicación OLEToolBox
+
+Documento para favorecer la correcta ejecución de los andamios... "Scaffolds".
+Así también para la correcta implementación de cada líonea de código que genere
+cualquier tipo de impacto de cualquier índole que pudiera repercutir en la ejecución del programa.
+
+
+-------------------**************************************-----------------------
+
+
+
+--------------------------------------------------------------------
+09/02/2024 Viernes de carnaval final del falla
+--------------------------------------------------------------------
+
+	-Comprobar posibles cambios que pueda llegar a sufrir el modelado de los datos.
+	-Prevenido el error de tener un Id asignado con auto incremento.
+
+	Los IDS de MainCompany y SystemData son ahora NVARCHAR(50).
+
+	Se ha creado una app WebAPI clon de esta para pruebas y otra para investigación
+
+---------->Realizar scaffold #1 con la zona USERS y la zona SYSTEM
+---------->Implementación de los GETTERS de los dos modelos
+---------->Agregado del campo Fecha actual del sistema a la tabla SystemData
+
+
+---------------------------------------------------------------------
+10/02/2024 Sábado de carnaval Código
+---------------------------------------------------------------------
+
+---------->Implementación de los métodos POST UPDATE y DELETE de USERS Y SYSTEM
+
+---------->Desarrollo en el lado front end.
+
+
+***********>(Acción de Prevención) El sistema debe enviar algún tipo de señal representetiva cuando consigue instalar los datos con éxito.
+			Referente al sistema que sepa si tiene ya los datos instalados en la base de datos o no 
+			cuando se accede a él desde el navegador.
+			Viene a representar que la landing page y la página de configuración no debe aparecer, solamente debe hacerlo cuando la aplicación
+			sea instalada por primera vez en el servidor, siendo el acceso por navegador el método para inicializar los datos iniciales
+			de la aplicación en su versión distribuible.
+
+
+---------------------------------------------------------------------
+13/02/2024 Domingo de carnaval Código
+---------------------------------------------------------------------
+
+---------->Desarrollo Parcial de la zona contacto

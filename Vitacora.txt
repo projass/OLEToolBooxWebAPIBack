@@ -1,0 +1,42 @@
+﻿
+09-2-2024 Viernes de lluvia
+
+------------REALIZADO SCAFFOLD DE LA DATABASE DE PRUEBAS, POSIBLE REMODELAR.-----------
+-Realizado scaffold #1 -Modelos: UserCredentials, UserProfile, UserDatum, Role, SystemDatum, MainCompany
+-Añadida la connectionString al app.development.json.
+-Añadida la connectionString al program y Scopeado el Context.
+-Añadidos métodos GET asíncronos al UsersControlers para los cuatro modelos de la zona users.
+
+ATENCIÓN: -Remodelado de las claves primarias de los modelos MainCompany y SystemData. 
+							Campos modificados:
+									*MainId
+									*SystemId
+
+-Realizado rescaffold #1 sobre scaffold 1 con los IDS.
+-Refactorizado los dos campos clave en el script: SQLOLEToolbox.sql
+-Realizado rescaffold #2 sobre scaffold 1 añadiendo fecha actual al sistema.
+-Añadida clase Generations que genera la ID de la MAIN Company y del SystemData.
+
+-Añadidos métodos CRUD en los modelos MainCompany, SystemData, Roles, UserCredentials.
+
+-Realizado rescaffold #3 sobre scaffold 1 corrigiendo la nulabilidad del enlace de recuperación de contraseña.
+
+-------------------------14-02-2024
+
+-Echart un vistazo a las buenas prçacticas en SQL Server(generación de scripts... funciones)
+
+Email Nieves -------------> nmartin@viewnext.com
+
+Trabajo ------->	-Zona Users y zona System, 
+					-Pequeña guía de usuario de cada zona. 
+					-Guía de configuración.
+					-Considerar de nuevo la entidad y la zona Companies.
+
+--Añadido el CRUD COMPLETO EN LA ZONA USER POR AHORA (MainCompany, SystemData, UserCredentials, UserProfiles, UserData, Roles).
+
+-Añadido servicio de gestión de archivos.
+-Añadido servicio de hash de password.
+
+testeado todo menos algún endpoint, terminar de testear mañana y quizas reiniciar la base de datos
+
+
